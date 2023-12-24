@@ -1,0 +1,10 @@
+body #vv--root {
+  width: 240px;
+  right: unset;
+  left: var(--nav-bar-width);
+  max-height: 100svh;
+  z-index: 2000 !important;
+}
+body:has(#vv--root) {
+  --char-panel-width: 240px;
+}

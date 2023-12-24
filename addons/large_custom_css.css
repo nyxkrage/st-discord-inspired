@@ -1,0 +1,28 @@
+body {
+  #user-settings-block-content {
+    > :nth-child(1),
+    > :nth-child(3) {
+      flex: 0 0 25%;
+    }
+    > :nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      > :nth-child(4) {
+        display: contents;
+      }
+      #CustomCSS-block {
+        flex-basis: 100%;
+        margin-left: 5px;
+        > .flex-container {
+          flex: 1 1 auto;
+          align-items: stretch;
+          > #customCSS {
+            height: unset;
+            white-space: pre;
+          }
+        }
+      }
+    }
+  }
+}
