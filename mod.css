@@ -1,0 +1,44 @@
+body {
+  --primaryBgCol: var(--SmartThemeCheckboxBgColorR),
+    var(--SmartThemeCheckboxBgColorG), var(--SmartThemeCheckboxBgColorB);
+  --primaryBgAlpha: var(--SmartThemeCheckboxBgColorA);
+  --SmartThemeBodyColor: var(--SmartThemeShadowColor);
+  --secondaryBg: var(--SmartThemeBlurTintColor);
+  --tertiaryBg: var(--SmartThemeBorderColor);
+}
+
+div:has(> span[data-i18n="Main Text"]) {
+  & > span {
+    display: none;
+  }
+
+  &::after {
+    color: var(--textColor);
+    display: inline;
+    content: "Chat Background";
+  }
+}
+
+div:has(> span[data-i18n="Shadow Color"]) {
+  & > span {
+    display: none;
+  }
+
+  &::after {
+    color: var(--textColor);
+    display: inline;
+    content: "Main Text";
+  }
+}
+
+div:has(> span[data-i18n="Chat Background"]) {
+  & > span {
+    display: none;
+  }
+
+  &::after {
+    color: var(--textColor);
+    display: inline;
+    content: "Text Shadow";
+  }
+}
