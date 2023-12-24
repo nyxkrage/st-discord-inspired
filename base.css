@@ -67,8 +67,10 @@ body:has(#left-nav-panel.openDrawer) {
 
 #sys-settings-button:not(:has(.online_status_indicator.success)) .drawer-icon,
 #user-settings-button .drawer-icon {
-  margin-left: 4px;
-  transition: none;
+  &:before {
+    margin-left: 4px;
+    transition: none;
+  }
 }
 
 #right-nav-panel {

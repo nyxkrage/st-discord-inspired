@@ -13,5 +13,5 @@ mkdir -p dist
 cat base.css pure.css addons/*.css > dist/discord_inspired.css
 
 # Build the full theme and includes the custom css
-THEME_CSS=$(cat base.css mod.css addons/*.css | sed 's/"/\\"/g')
+THEME_CSS=$(cat base.css mod.css addons/*.css)
 jq --arg css "$THEME_CSS" '.custom_css = $css' theme.json.in > dist/discord_inspired.json
