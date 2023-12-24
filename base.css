@@ -11,7 +11,7 @@ body:has(#right-nav-panel.openDrawer) {
 }
 
 body:has(#left-nav-panel.openDrawer) {
-  --settings-panel-width: 280px;
+  --settings-panel-width: 340px;
 }
 
 #top-bar {
@@ -903,4 +903,8 @@ input[type="checkbox"]:not(#nav-toggle):not(#rm_button_panel_pin):not(
   height: 100dvh;
   max-height: unset;
   box-shadow: none;
+}
+
+#completion_prompt_manager #completion_prompt_manager_list {
+  overflow-y: scroll;
 }
