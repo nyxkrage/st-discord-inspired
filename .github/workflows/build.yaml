@@ -11,9 +11,7 @@ jobs:
       - name: Build Theme
         run: bash build.sh
 
-      - name: Create Release
-        uses: elgohr/Github-Release-Action@v5
-        env:
-          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+      - name: Add zips to release
+        uses: softprops/action-gh-release@v1
         with:
-          title: ${{ github.sha }}
+          files: ./dist/*
