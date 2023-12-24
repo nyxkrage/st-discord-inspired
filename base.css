@@ -327,6 +327,9 @@ hr {
 
   &:has(~ #rm_characters_block[style*="display: none;"])
     #rm_button_selected_ch {
+    display: flex;
+    justify-content: right;
+    width: 80%;
     top: 6px;
     right: 8px;
   }

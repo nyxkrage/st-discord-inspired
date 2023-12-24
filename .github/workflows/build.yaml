@@ -1,8 +1,5 @@
 name: Build Theme
-on:
-  push:
-    tags:
-      - "v*"
+on: [push]
 
 jobs:
   build:
