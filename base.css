@@ -512,6 +512,14 @@ textarea {
   }
 }
 
+#chat,
+#form_sheld {
+  width: calc(
+    100vw - var(--nav-bar-width) - var(--char-panel-width) -
+      var(--settings-panel-width)
+  );
+}
+
 #chat {
   max-height: unset;
   background: transparent;
