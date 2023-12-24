@@ -1,9 +1,14 @@
 name: Build Theme
-on: [push]
+on:
+  push:
+    tags:
+      - "v*"
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout source
         uses: actions/checkout@v3
@@ -11,7 +16,10 @@ jobs:
       - name: Build Theme
         run: bash build.sh
 
-      - name: Add zips to release
+      - name: Add files to release
         uses: softprops/action-gh-release@v1
+        id: create_release
         with:
-          files: ./dist/*
+          files: |
+            ./dist/discord_inspired.css
+            ./dist/discord_inspired.json
