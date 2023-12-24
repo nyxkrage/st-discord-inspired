@@ -3,6 +3,7 @@ body {
   --nav-bar-width: 64px;
   --char-panel-width: 0px;
   --settings-panel-width: 0px;
+  --primaryBlue: rgb(88, 101, 242);
 }
 
 body:has(#right-nav-panel.openDrawer) {

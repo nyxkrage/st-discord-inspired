@@ -5,5 +5,4 @@ body {
   --tertiaryBg: rgba(31, 31, 34, 1);
   --hoverPrimary: var(--black30a);
   --selected: var(--grey5050a);
-  --primaryBlue: rgb(88, 101, 242);
 }
