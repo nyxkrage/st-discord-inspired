@@ -46,13 +46,15 @@ body:has(#left-nav-panel.openDrawer) {
   }
 }
 
-.drawer {
+.drawer-icon {
+  font-size: 1.5em;
   background-color: var(--secondaryBg);
   width: 48px;
   height: 48px;
+  line-height: 48px;
+  text-align: center;
   border-radius: 100%;
-
-  &:has(div.openIcon) {
+  &.openIcon {
     background-color: var(--primaryBlue);
     border-radius: 40%;
   }
@@ -752,11 +754,11 @@ div:has(> label > #auto-connect-checkbox) {
   height: 29px;
 }
 
-body:has(.online_status_indicator.success) #sys-settings-button {
+body:has(.online_status_indicator.success) #sys-settings-button .drawer-icon {
   background: green !important;
 }
 
-#sys-settings-button {
+#sys-settings-button .drawer-icon {
   background: red !important;
 }
 
