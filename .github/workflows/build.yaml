@@ -13,10 +13,17 @@ jobs:
       - name: Build Theme
         run: bash build.sh
 
+      - name: Create Tag
+        run: git tag -a ${{ github.SHA }} -m ""
+
+      - name: Push Tag
+        run: git push --tags
+
       - name: Add files to release
         uses: softprops/action-gh-release@v1
         id: create_release
         with:
+          tag_name: ${{ github.SHA }}
           files: |
             ./dist/discord_inspired.css
             ./dist/discord_inspired.json
