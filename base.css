@@ -764,10 +764,6 @@ div:has(> label > #auto-connect-checkbox) {
   display: none;
 }
 
-.text_pole {
-  height: 29px;
-}
-
 body:has(.online_status_indicator.success) #sys-settings-button .drawer-icon {
   background: green !important;
 }
