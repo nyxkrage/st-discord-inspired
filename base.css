@@ -908,3 +908,7 @@ input[type="checkbox"]:not(#nav-toggle):not(#rm_button_panel_pin):not(
 #completion_prompt_manager #completion_prompt_manager_list {
   overflow-y: scroll;
 }
+
+.mes_block {
+  transform: none !important;
+}
