@@ -93,7 +93,8 @@ body.charListGrid #rm_print_characters_block {
   padding: 5px 8px;
 
   & .group_select,
-  & .character_select {
+  & .character_select,
+  & .bogus_folder_select {
     width: 100%;
     flex-direction: row;
     overflow: unset;
@@ -146,6 +147,22 @@ body.charListGrid #rm_print_characters_block {
       width: unset;
       flex-grow: 1;
       max-width: calc(100% - 20px - 32px);
+    }
+  }
+}
+
+.bogus_folder_select {
+  & .avatar {
+    font-size: 12px;
+    outline: none;
+  }
+
+  & .bogus_folder_icon {
+    margin-left: 1px;
+
+    &.fa-right-from-bracket {
+      margin-left: -3px;
+      margin-top: -1px;
     }
   }
 }
