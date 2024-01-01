@@ -925,3 +925,38 @@ input[type="checkbox"]:not(#nav-toggle):not(#rm_button_panel_pin):not(
 .mes_block {
   transform: none !important;
 }
+
+.mes.lastInContext {
+  border-top: none !important;
+  margin-top: 2em;
+  &:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 0.4em);
+    border-bottom: 2px solid var(--preferred);
+    padding-left: 100%;
+  }
+  &:hover::after {
+    display: none;
+  }
+
+  &:after {
+    --arrow: 10px;
+    content: "Context";
+    position: absolute;
+    bottom: calc(100% - 0.4em);
+    right: 0;
+    background: var(--preferred);
+    line-height: 1.5em;
+    padding: 0.125em 0.5em 0.125em calc(0.2em + var(--arrow));
+    clip-path: polygon(
+      0 50%,
+      var(--arrow) 100%,
+      100% 100%,
+      100% 0%,
+      var(--arrow) 0%
+    );
+    border-radius: 5px;
+  }
+}
