@@ -4,6 +4,8 @@ body {
   --char-panel-width: 0px;
   --settings-panel-width: 0px;
   --primaryBlue: rgb(88, 101, 242);
+  --hoverPrimary: var(--black30a);
+  --selected: var(--grey5050a);
 }
 
 body:has(#right-nav-panel.openDrawer) {
@@ -771,14 +773,6 @@ body * {
 .select2-container.select2-container--focus .select2-selection--multiple,
 .select2-container.select2-container--focus .select2-selection--single {
   border: none;
-}
-
-.online_status {
-  display: none;
-}
-
-div:has(> label > #auto-connect-checkbox) {
-  display: none;
 }
 
 body:has(.online_status_indicator.success) #sys-settings-button .drawer-icon {
