@@ -88,6 +88,12 @@ body:has(#left-nav-panel.openDrawer) {
   background-color: var(--secondaryBg);
 }
 
+#character_name_pole {
+  position: absolute;
+  top: 12%;
+  width: 77%;
+}
+
 body.charListGrid #rm_print_characters_block {
   flex-direction: column;
   justify-content: unset;
