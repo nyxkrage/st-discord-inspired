@@ -965,3 +965,8 @@ input[type="checkbox"]:not(#nav-toggle):not(#rm_button_panel_pin):not(
 #world_info_pagination .paginationjs-nav {
   bottom: unset;
 }
+
+/* fix worldinfo control row being unaligned */
+#world_info_pagination .paginationjs {
+  margin: 0;
+}
